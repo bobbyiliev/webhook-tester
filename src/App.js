@@ -133,7 +133,7 @@ function App() {
           <div className="flex-1">
             <textarea
               className="border p-2 w-full h-64 resize-none"
-              placeholder='Enter JSON schema with faker.js values e.g. { "name": "${name.firstName}" }'
+              placeholder='Enter JSON schema with faker.js values e.g. { "name": "$ {name.firstName}" }'
               value={jsonSchema}
               onChange={e => {
                 setJsonSchema(e.target.value);
