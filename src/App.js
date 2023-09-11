@@ -64,7 +64,7 @@ function App() {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
-        return response.json();
+        return response;
       })
       .then(data => {
         // Handle response data if needed
